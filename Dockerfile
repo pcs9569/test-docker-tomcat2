@@ -9,6 +9,7 @@ RUN mkdir /tomcat && \
     chmod 755 /tomcat/apache-tomcat-8.5.51/bin/*.sh
 
 ADD run.sh /tomcat/apache-tomcat-8.5.51/bin
+RUN chmod 755 /tomcat/apache-tomcat-8.5.51/bin/*.sh
 
 EXPOSE 8080
 
